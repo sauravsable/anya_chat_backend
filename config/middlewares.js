@@ -11,12 +11,3 @@ module.exports = [
   'strapi::public',
 ];
 
-module.exports = ({ env }) => ({
-  settings: {
-    cors: {
-      origin: ['http://localhost:3000', 'https://your-frontend-domain.com'],
-      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-      headers: ['Content-Type', 'Authorization'],
-    },
-  },
-});
